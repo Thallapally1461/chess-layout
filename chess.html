@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chess Board</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            width: 0;
+            padding: 0;
+        }
+
+        .chess {
+            position: absolute;
+            left: 27.5%;
+            height: 550px;
+            width: 550px;
+            border: 10px double rgb(99, 99, 99);
+
+        }
+
+        .row {
+            height: 50px;
+            width: 100%;
+        }
+
+        .blk,
+        .wt {
+            height: 68.5px;
+            width: 68.5px;
+            float: left;
+        }
+
+        .blk {
+            background-color: rgba(20, 100, 19, 0.808);
+        }
+
+        .wt {
+            background-color: rgba(160, 123, 20, 0.671);
+        }
+
+        i {
+            padding-top: 33px;
+            padding-left: 22.5px;
+            
+        }
+
+        .chess .row i:hover {
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="chess">
+        <div class="row">
+            <div class="blk"><i class="fa-solid fa-chess-rook fa-2xl"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-knight fa-2xl"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-bishop fa-2xl"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-queen fa-2xl"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-king fa-2xl"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-bishop fa-2xl"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-knight fa-2xl"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-rook fa-2xl"></i></div>
+        </div>
+        <div class="row">
+            <div class="wt"><i class="fa-solid fa-chess-pawn fa-2xl"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-pawn fa-2xl"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-pawn fa-2xl"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-pawn fa-2xl"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-pawn fa-2xl"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-pawn fa-2xl"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-pawn fa-2xl"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-pawn fa-2xl"></i></div>
+        </div>
+        <div class="row">
+            <div class="blk"></div>
+            <div class="wt"></div>
+            <div class="blk"></div>
+            <div class="wt"></div>
+            <div class="blk"></div>
+            <div class="wt"></div>
+            <div class="blk"></div>
+            <div class="wt"></div>
+        </div>
+        <div class="row">
+            <div class="wt"></div>
+            <div class="blk"></div>
+            <div class="wt"></div>
+            <div class="blk"></div>
+            <div class="wt"></div>
+            <div class="blk"></div>
+            <div class="wt"></div>
+            <div class="blk"></div>
+        </div>
+        <div class="row">
+            <div class="blk"></div>
+            <div class="wt"></div>
+            <div class="blk"></div>
+            <div class="wt"></div>
+            <div class="blk"></div>
+            <div class="wt"></div>
+            <div class="blk"></div>
+            <div class="wt"></div>
+        </div>
+        <div class="row">
+            <div class="wt"></div>
+            <div class="blk"></div>
+            <div class="wt"></div>
+            <div class="blk"></div>
+            <div class="wt"></div>
+            <div class="blk"></div>
+            <div class="wt"></div>
+            <div class="blk"></div>
+        </div>
+        <div class="row">
+            <div class="blk"><i class="fa-solid fa-chess-pawn fa-2xl" style="color: #fcfcfd;"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-pawn fa-2xl" style="color: #fcfcfd;"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-pawn fa-2xl" style="color: #fcfcfd;"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-pawn fa-2xl" style="color: #fcfcfd;"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-pawn fa-2xl" style="color: #fcfcfd;"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-pawn fa-2xl" style="color: #fcfcfd;"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-pawn fa-2xl" style="color: #fcfcfd;"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-pawn fa-2xl" style="color: #fcfcfd;"></i></div>
+        </div>
+        <div class="row">
+            <div class="wt"><i class="fa-solid fa-chess-rook fa-2xl" style="color: #ffffff;"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-knight fa-2xl" style="color: #ffffff;"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-bishop fa-2xl" style="color: #ffffff;"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-queen fa-2xl" style="color: #ffffff;"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-king fa-2xl" style="color: #ffffff;"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-bishop fa-2xl" style="color: #ffffff;"></i></div>
+            <div class="wt"><i class="fa-solid fa-chess-knight fa-2xl" style="color: #ffffff;"></i></div>
+            <div class="blk"><i class="fa-solid fa-chess-rook fa-2xl" style="color: #ffffff;"></i></div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
